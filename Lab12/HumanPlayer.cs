@@ -8,10 +8,11 @@ namespace Lab12
 {
     class HumanPlayer : Player
     {
-        public HumanPlayer(string name, int rashvalue) : base(name, rashvalue)
+        public override int GenerateRashambo()
         {
-            Name = name;
-            RashValue = rashvalue;
+            Console.WriteLine("Choose 1 for Rock 2 for Paper 3 for Scissors");
+            int Choice = int.Parse(Console.ReadLine());
+            return Choice;
         }
     }
 }

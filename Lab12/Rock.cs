@@ -9,14 +9,9 @@ namespace Lab12
     class Rock : Player
     {
         //generaterashambo only rock
-        //public override int generaterashambo()
-        //{
-        //    return 1;
-        //}
-
-        public Rock(int rashvalue) : base(rashvalue)
-        {
-            RashValue = 1;
-        }
+        public override int GenerateRashambo()
+        {           
+            return 1;
+        }       
     }
 }

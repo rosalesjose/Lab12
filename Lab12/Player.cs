@@ -11,7 +11,7 @@ namespace Lab12
         private string name;
         private int rashvalue;
 
-        //public  string GenerateRashambo();
+        public abstract int GenerateRashambo();
 
         public string Name
         {
@@ -41,6 +41,5 @@ namespace Lab12
             this.name = "";
             this.rashvalue = 0;
         }
-
     }
 }

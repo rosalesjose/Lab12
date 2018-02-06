@@ -6,10 +6,14 @@ using System.Threading.Tasks;
 
 namespace Lab12
 {
-    class Random : Player
+    class RandomPlayer : Player
     {
-        //generaterashambo rock,paper, or scissors
+        Random r = new Random();
 
-
+        public override int GenerateRashambo()
+        {
+            int num = r.Next(1, 3);
+            return num;
+        }
     }
 }
